@@ -23,16 +23,3 @@ class PredTask(Task):
         preds = self.predict(data, model)
 
         return preds
-
-# def show(idx, title):
-#     plt.figure()
-#     plt.imshow(test_images[idx].reshape(28,28))
-#     plt.axis('off')
-#     plt.title('\n\n{}'.format(title), fontdict={'size': 16})
-
-# class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
-#                'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
-
-# for i in range(0,3):
-#   show(i, 'The model thought this was a {} (class {}), and it was actually a {} (class {})'.format(
-#     class_names[np.argmax(predictions[i])], np.argmax(predictions[i]), class_names[test_labels[i]], test_labels[i]))
